@@ -2,14 +2,11 @@ using PhaseColors
 using GLMakie
 
 # absarg plot
-
-fig = Figure(resolution = (1024,1024))
-
-ax = Axis(fig[1,1])
+x = LinRange(0,2π,400)
+y = @. (1+sin(x))*cis(x)
 
 cm = phasecolormaps[:math]
 
-x = LinRange(0,2π,400)
-y = cis.(x)
-
-lines!(ax,x,abs.(y),color=canonicalphase.(y),colormap=cm,colorrange=(0,1))
+fig = Figure(resolution = (1024,1024))
+ax = Axis(fig[1,1])
+lines!(ax,x,abs.(y),color=canonicalphase.(y),colorrange=(0,1),colormap=cm)
