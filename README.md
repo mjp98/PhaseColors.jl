@@ -9,10 +9,10 @@ This is intended to be a lightweight package to help generate visualisations of 
 
 ## Functionality
 
- - grid generation on complex plane
  - `canonicalphase(z::Number)`
- - colorschems for phase visualisation
-
+ - `phasecolormaps`, a dictionary of colorschemes for phase visualisation
+ - utility functions for grid generation on complex plane
+ 
 ## Examples
 
 The examples folder is intended to include examples for generating common complex visualisations using different plotting packages and image tools such as ImageInTerminal.jl, UnicodePlots.jl, Plots.jl, PlotlyJS.jl, PGFPlotsX.jl and Makie.jl
@@ -37,7 +37,7 @@ Starting with
 
 For typical use, alternative packages providing complex phase portrait functions may be more useful:
 
- - ComplexPhasePortraits.jl
+ - [ComplexPhasePortrait.jl](https://github.com/JuliaHolomorphic/ComplexPhasePortrait.jl)
  - [ComplexPortraits.jl](https://github.com/luchr/ComplexPortraits.jl)
 
 
