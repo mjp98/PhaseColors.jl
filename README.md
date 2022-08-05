@@ -9,7 +9,7 @@ This is intended to be a lightweight package to help generate visualisations of 
 
 ## Functionality
 
- - `canonicalphase(z::Number)`
+ - `canonicalphase(z)`, returns the phase of z, normalised to `0..1` 
  - `phasecolormaps`, a dictionary of colorschemes for phase visualisation
  - utility functions for grid generation on complex plane
  
