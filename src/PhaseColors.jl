@@ -61,7 +61,7 @@ end
 ℂ2y(z) = [imag(w) for w in @view z[:,1]]
 ℂ2xy(z) = ℂ2x(z),ℂ2y(z)
 
-const nist_colors =  RGB{Float32}(1.0f0,0.0f0,0.0f0)
+const nist_colors = [RGB{Float32}(1.0f0,0.0f0,0.0f0)
 RGB{Float32}(1.0f0,0.14999998f0,0.0f0)
 RGB{Float32}(1.0f0,0.3f0,0.0f0)
 RGB{Float32}(1.0f0,0.45f0,0.0f0)
@@ -101,7 +101,7 @@ RGB{Float32}(1.0f0,0.0f0,0.5999999f0)
 RGB{Float32}(1.0f0,0.0f0,0.4499998f0)
 RGB{Float32}(1.0f0,0.0f0,0.3000002f0)
 RGB{Float32}(1.0f0,0.0f0,0.1500001f0)
-RGB{Float32}(1.0f0,0.0f0,0.0f0)
+RGB{Float32}(1.0f0,0.0f0,0.0f0)]
 
 const nist = ColorScheme(nist_colors,"cyclic","NIST phase colorscheme")
 
